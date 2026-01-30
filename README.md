@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# Ummie Shammie
 
-## Project info
+A modern single-page application built with **React**, **TypeScript**, **Vite**, and **shadcn/ui**, featuring light/dark theme, multiple pages, and a responsive layout.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Quick Start
 
-There are several ways of editing your application.
+### Prerequisites
 
-**Use Lovable**
+- **Node.js** (LTS, e.g. 18+) — [Install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating) or from [nodejs.org](https://nodejs.org/)
+- **npm** (comes with Node) or **Bun**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Install & Run
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
+cd ummie-shammie-6767-1
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at **http://localhost:8080** (or the port shown in the terminal).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Tech Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Category   | Technologies |
+|-----------|---------------|
+| Framework | React 18 |
+| Language  | TypeScript |
+| Build     | Vite 5 |
+| Styling   | Tailwind CSS |
+| UI        | shadcn/ui (Radix UI) |
+| Routing   | React Router v6 |
+| Data      | TanStack React Query |
+| Testing   | Vitest + React Testing Library |
+| Linting   | ESLint 9 + TypeScript ESLint |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/     # Layout (Navbar, Footer, Layout) and shared UI
+├── components/ui/  # shadcn/ui components
+├── contexts/       # Theme (light/dark) provider
+├── hooks/          # Custom React hooks
+├── lib/            # Utilities (e.g. cn)
+├── pages/          # Route pages (Index, Projects, Experience, CV, etc.)
+└── test/           # Test setup and example tests
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+| Command           | Description                    |
+|-------------------|--------------------------------|
+| `npm run dev`     | Start dev server (port 8080)   |
+| `npm run build`   | Production build               |
+| `npm run preview` | Preview production build       |
+| `npm run lint`    | Run ESLint                     |
+| `npm run test`    | Run tests once                 |
+| `npm run test:watch` | Run tests in watch mode     |
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Pages
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **/** — Home  
+- **/projects** — Projects  
+- **/experience** — Experience  
+- **/cv** — CV  
+- **/courses** — Courses  
+- **/transcript** — Transcript  
+- **/leadership** — Leadership  
+- **/social** — Social  
+- **/contact** — Contact  
+
+---
+
+## Documentation
+
+For a detailed breakdown of the app infrastructure, configuration, and dependencies, see **[documentation.md](./documentation.md)**.
+
+---
+
+## License
+
+Private project. All rights reserved.
